@@ -7,16 +7,17 @@ const t = ref('正在加载时间...');
 const props = defineProps(['listData']);
 
 const listData = computed(() => {
-    const data = props.listData.map((item, index) => {
+    return props.listData.map((item, index) => {
         const path = item.path.split('/')[item.path.split('/').length - 1];
+        const img = item.imgSrc ? `../../../public/${item.imgSrc}` : '';
         return {
             ...item,
             t: time({
-                time: formatDate(new Date(timeData[path + '.md'].editTime), 'yyyy-MM-dd-HH-mm')
-            }, true)
+                time: formatDate(new Date(timeData[path + '.md'].editTime), 'yyyy-MM-dd-HH-mm-ss')
+            }),
+            imgSrc: img || ''
         }
     })
-    return data;
 });
 
 

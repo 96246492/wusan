@@ -15,6 +15,7 @@
 
 
 
+
 ```js
 // store/useLoginUser 提供当前登录用户的共享数据
 // 以下代码仅供参考
@@ -162,6 +163,6 @@ app.mount("#app");
 import LastUpdated from "../.vitepress/components/LastUpdated/index.vue";
 import Comment from "../.vitepress/components/Comment/index.vue";
 </script>
-<LastUpdated time='2022-10-13-17-38-19' />
+<LastUpdated time='2022-10-16-16-48-07' />
 <Comment />
 

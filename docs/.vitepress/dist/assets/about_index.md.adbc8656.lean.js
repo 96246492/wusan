@@ -1,4 +1,4 @@
-import{r as z,o as x,a as l,c as s,b as o,w as n,d as p,F as M,e as b,t as m,f as F,g as C}from"./app.5efc643d.js";const k={class:"about-container"},B={class:"about-header"},y={class:"about-avatar"},E=o("img",{src:"https://q1.qlogo.cn/g?b=qq&nk=1787603171&s=640",alt:""},null,-1),q=[E],A={class:"about-content"},S={class:"item-l"},H=["innerHTML"],L={key:1,class:"item-r"},N={__name:"index",setup(f){const r=[{title:"\u8054\u7CFB\u65B9\u5F0F",icon:`<svg t="1664357276216" class="icon" 
+import{r as z,o as x,a as l,c as s,b as o,w as n,d as p,F as M,e as b,t as m,f as F,g as C}from"./app.737867e3.js";const k={class:"about-container"},B={class:"about-header"},y={class:"about-avatar"},E=o("img",{src:"https://q1.qlogo.cn/g?b=qq&nk=1787603171&s=640",alt:""},null,-1),q=[E],A={class:"about-content"},S={class:"item-l"},H=["innerHTML"],L={key:1,class:"item-r"},N={__name:"index",setup(f){const r=[{title:"\u8054\u7CFB\u65B9\u5F0F",icon:`<svg t="1664357276216" class="icon" 
             viewBox="0 0 1024 1024" version="1.1" 
             xmlns="http://www.w3.org/2000/svg" 
             p-id="13002" width="200" height="200">

@@ -10,8 +10,6 @@ const config = require('./.vitepress/index.json');
 const listData = [];
 const { marked } = markedjs;
 
-const publicImgPath = "https://raw.githubusercontent.com/tenpetal/wusan/main/docs/public/";
-
 
 const isFile = async (path) => {
     return await fs.existsSync(path);
@@ -101,13 +99,10 @@ import Comment from "../.vitepress/components/Comment/index.vue";
         } else {
             if (time) {
                 await writeFileContent(`${fileDirPath}/${pop}`, data.replace(/time=\'[\w\W]+\'/g, `time='${formatDate(new Date(time), 'yyyy-MM-dd-HH-mm-ss')}'`));
-                
-                let fileState = await fs.statSync(`${fileDirPath}/${pop}`);
                 timeJson[pop] = {
                     ...timeJson[pop],
-                    editTime: fileState.mtime,
+                    editTime: time,
                 };
-
             }
         }
 
@@ -124,7 +119,7 @@ import Comment from "../.vitepress/components/Comment/index.vue";
 
         let imgSrc = marked(data).match(/<img.*?src="(.*?)".*?\/?>/i) || "";
         if (imgSrc) {
-            imgSrc = publicImgPath + imgSrc[1].split('/')[imgSrc[1].split('/').length - 1];
+            imgSrc = imgSrc[1].split('/')[imgSrc[1].split('/').length - 1];
         }
 
         if (title) {

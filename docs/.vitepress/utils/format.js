@@ -1,6 +1,6 @@
 
 
-export const time = (props, num = false) => {
+export const time = (props) => {
 
     let year = props.time.split('-')[0];
     let month = props.time.split('-')[1];
@@ -9,13 +9,7 @@ export const time = (props, num = false) => {
     let minute = props.time.split('-')[4];
     let second = props.time.split('-')[5];
 
-    let t = '';
-    if (num == true) {
-        t = `${year}-${month}-${day} ${hour}:${minute}`;
-    } else {
-        t = `${year}-${month}-${day} ${hour}:${minute}:${second}`;
-    }
-    return t;
+    return `${year}-${month}-${day} ${hour}:${minute}:${second}`;
 }
 
 
@@ -39,3 +33,6 @@ export const formatDate = (t, str) => {
     };
     return str.replace(/([a-z]+)/ig, function ($1) { return obj[$1] });
 }
+
+
+

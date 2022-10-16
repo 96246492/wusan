@@ -286,10 +286,9 @@ setup(){
 
 
 
-
 <script id="theCoolWorld__" setup>
 import LastUpdated from "../.vitepress/components/LastUpdated/index.vue";
 import Comment from "../.vitepress/components/Comment/index.vue";
 </script>
-<LastUpdated time='2022-10-11-22-26-58' />
+<LastUpdated time='2022-10-16-16-48-06' />
 <Comment />
