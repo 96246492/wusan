@@ -1,0 +1,1 @@
+import{t as a}from"./format.a4a2980f.js";import{_ as c,i as o,a as _,c as n,t as p,u as r}from"../app.afebfda1.js";const i={class:"last-updated-container"},d={__name:"index",props:["time"],setup(t){const e=t,s=o(()=>a(e));return(m,u)=>(_(),n("div",i," \u7F16\u8F91\u4E8E"+p(r(s)),1))}},f=c(d,[["__scopeId","data-v-cc23a823"]]);export{f as L};
