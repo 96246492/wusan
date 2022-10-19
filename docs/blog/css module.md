@@ -86,5 +86,5 @@ style-loader为了我们更加方便的应用类名，会去除掉其他信息�
 import LastUpdated from "../.vitepress/components/LastUpdated/index.vue";
 import Comment from "../.vitepress/components/Comment/index.vue";
 </script>
-<LastUpdated time='2022-10-19-14-54-18' />
+<LastUpdated time='2022-10-19-14-54-49' />
 <Comment />

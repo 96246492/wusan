@@ -160,12 +160,10 @@ app.mount("#app");
 
 
 
-
-
 <script id="theCoolWorld__" setup>
 import LastUpdated from "../.vitepress/components/LastUpdated/index.vue";
 import Comment from "../.vitepress/components/Comment/index.vue";
 </script>
-<LastUpdated time='2022-10-19-14-54-41' />
+<LastUpdated time='2022-10-19-15-06-25' />
 <Comment />
 

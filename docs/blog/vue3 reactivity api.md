@@ -290,5 +290,5 @@ setup(){
 import LastUpdated from "../.vitepress/components/LastUpdated/index.vue";
 import Comment from "../.vitepress/components/Comment/index.vue";
 </script>
-<LastUpdated time='2022-10-19-14-54-33' />
+<LastUpdated time='2022-10-19-15-06-31' />
 <Comment />
