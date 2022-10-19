@@ -49,6 +49,7 @@ new webpack.ProvidePlugin({
 })
 ```
 
+
 然后在我们任意源码中：
 
 ```js
@@ -59,5 +60,5 @@ _.drop([1, 2, 3], 2); // <= 起作用
 import LastUpdated from "../.vitepress/components/LastUpdated/index.vue";
 import Comment from "../.vitepress/components/Comment/index.vue";
 </script>
-<LastUpdated time='2022-10-16-16-55-06' />
+<LastUpdated time='2022-10-19-14-40-52' />
 <Comment />

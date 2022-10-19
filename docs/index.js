@@ -26,9 +26,6 @@ const writeFileContent = (path, data) => {
     return fs.writeFileSync(path, data);
 }
 
-const isFileChange = (data) => {
-
-}
 
 const formatDate = (t, str) => {
     var obj = {
@@ -118,8 +115,14 @@ import Comment from "../.vitepress/components/Comment/index.vue";
         let filePath = `${config.base}blog\/${pop}`;
 
         let imgSrc = marked(data).match(/<img.*?src="(.*?)".*?\/?>/i) || "";
+        let imgBase64 = '';
         if (imgSrc) {
             imgSrc = imgSrc[1].split('/')[imgSrc[1].split('/').length - 1];
+            const isF = await isFile("./public/" + imgSrc);
+            if (isF) {
+                const img = await readFileContent('./public/' + imgSrc);
+                imgBase64 = 'data:image/png;base64,' + new Buffer(img, 'binary').toString('base64');
+            }
         }
 
         if (title) {
@@ -127,12 +130,12 @@ import Comment from "../.vitepress/components/Comment/index.vue";
                 id: new Date().getTime(),
                 title,
                 desc,
-                imgSrc,
+                imgSrc: imgBase64,
                 path: filePath,
             })
         }
     }
-    
+
     fs.writeFileSync(path.join(__dirname, '../docs/.vitepress/data/listData.json'), JSON.stringify(listData), 'utf-8');
 
 }())

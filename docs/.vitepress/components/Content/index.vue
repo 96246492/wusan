@@ -6,16 +6,16 @@ import { time, formatDate } from "../../utils/format.js";
 const t = ref('正在加载时间...');
 const props = defineProps(['listData']);
 
+
 const listData = computed(() => {
     return props.listData.map((item, index) => {
         const path = item.path.split('/')[item.path.split('/').length - 1];
-        const img = item.imgSrc ? `../../../public/${item.imgSrc}` : '';
         return {
             ...item,
             t: time({
                 time: formatDate(new Date(timeData[path + '.md'].editTime), 'yyyy-MM-dd-HH-mm-ss')
             }),
-            imgSrc: img || ''
+            imgSrc: item.imgSrc || ''
         }
     })
 });
