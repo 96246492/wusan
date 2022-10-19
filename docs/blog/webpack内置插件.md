@@ -56,9 +56,12 @@ new webpack.ProvidePlugin({
 $('#item'); // <= 起作用
 _.drop([1, 2, 3], 2); // <= 起作用
 ```
+
+
+
 <script id="theCoolWorld__" setup>
 import LastUpdated from "../.vitepress/components/LastUpdated/index.vue";
 import Comment from "../.vitepress/components/Comment/index.vue";
 </script>
-<LastUpdated time='2022-10-19-14-40-56' />
+<LastUpdated time='2022-10-19-14-54-47' />
 <Comment />

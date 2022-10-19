@@ -448,9 +448,12 @@ body {
 安装vscode的插件`stylelint`即可，它会读取你工程中的配置文件，按照配置进行实时报错
 
 > 实际上，如果你拥有了`stylelint`插件，可以不需要在postcss中使用该插件了
+
+
+
 <script id="theCoolWorld__" setup>
 import LastUpdated from "../.vitepress/components/LastUpdated/index.vue";
 import Comment from "../.vitepress/components/Comment/index.vue";
 </script>
-<LastUpdated time='2022-10-19-14-40-55' />
+<LastUpdated time='2022-10-19-14-54-30' />
 <Comment />

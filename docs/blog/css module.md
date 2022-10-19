@@ -79,9 +79,12 @@ style-loader为了我们更加方便的应用类名，会去除掉其他信息�
 - css module还会处理id选择器，不过任何时候都没有使用id选择器的理由
 - 使用了css module后，只要能做到让类名望文知意即可，不需要遵守其他任何的命名规范
 
+
+
+
 <script id="theCoolWorld__" setup>
 import LastUpdated from "../.vitepress/components/LastUpdated/index.vue";
 import Comment from "../.vitepress/components/Comment/index.vue";
 </script>
-<LastUpdated time='2022-10-19-14-40-55' />
+<LastUpdated time='2022-10-19-14-54-18' />
 <Comment />
